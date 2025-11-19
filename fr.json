@@ -1,0 +1,120 @@
+{
+  "nav": {
+    "about": "À propos",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "experience": "Expérience",
+    "contact": "Contact"
+  },
+  "hero": {
+    "subtitle": "Ingénieur Full Stack IA",
+    "description": "Diplômé en Ingénierie des Réseaux et Systèmes d'Information, passionné par l'IA et les solutions de développement web innovantes. Prêt à relever des projets ambitieux avec rigueur et curiosité.",
+    "cta": "Me Contacter"
+  },
+  "sections": {
+    "technicalSkills": "Compétences Techniques",
+    "featuredProjects": "Projets Phares",
+    "professionalExperience": "Expérience Professionnelle",
+    "downloadResume": "Télécharger Mon CV",
+    "resumeDescription": "Obtenez un aperçu détaillé de mon expérience, mes compétences et mes qualifications.",
+    "downloadCV": "Télécharger CV",
+    "getInTouch": "Me Contacter"
+  },
+  "skills": {
+    "programmingLanguages": "Langages de Programmation",
+    "frameworksLibraries": "Frameworks & Librairies",
+    "devopsTools": "DevOps & Outils",
+    "databases": "Bases de Données",
+    "aiMachineLearning": "IA & Machine Learning",
+    "methodologies": "Méthodologies",
+    "supervisedLearning": "Apprentissage Supervisé",
+    "unsupervisedLearning": "Apprentissage Non Supervisé",
+    "webScraping": "Web Scraping",
+    "sentimentAnalysis": "Analyse de Sentiment",
+    "designPatterns": "Patrons de Conception"
+  },
+  "projects": {
+    "interactiveConference": {
+      "title": "Plateforme de Conférences Interactives",
+      "description": "Développé une plateforme complète pour la préparation et la diffusion de conférences interactives en direct avec interaction du public en temps réel, intégration multimédia et gestion de scénarios de présentation."
+    },
+    "cryptoNow": {
+      "title": "CryptoNow - Analyse IA",
+      "description": "Développé un outil d'analyse de cryptomonnaies en Python avec web scraping, analyse de sentiment, algorithmes de prédiction et explications des résultats alimentées par GPT pour des insights de marché complets."
+    },
+    "familyCalendar": {
+      "title": "Application Web Calendrier Familial",
+      "description": "Créé une application Laravel full-stack pour la gestion de calendrier familial avec tableau de bord admin, consultation d'événements et fonctionnalités complètes de gestion familiale."
+    },
+    "libraryManagement": {
+      "title": "Gestion de Bibliothèque avec IA",
+      "description": "Développé un système complet de gestion de bibliothèque pour les établissements d'enseignement avec chatbot IA intégré connecté aux données internes pour une expérience utilisateur améliorée."
+    },
+    "trafficViolation": {
+      "title": "Système de Gestion des Infractions",
+      "description": "Développé un système CRM basé sur PHP optimisant la gestion des clients, propriétés et rendez-vous avec des processus automatisés de correspondance et de planification."
+    },
+    "employeeAnalytics": {
+      "title": "Plateforme d'Analyse de Données Employés",
+      "description": "Implémenté une solution complète d'analyse de données pour la gestion d'employés d'entreprise avec des capacités d'analyse avancées et de génération d'insights."
+    },
+    "tags": {
+      "fullStack": "Full Stack",
+      "realTime": "Temps Réel",
+      "mediaIntegration": "Intégration Multimédia",
+      "aiMl": "IA/ML",
+      "gptIntegration": "Intégration GPT",
+      "adminDashboard": "Tableau de Bord Admin",
+      "aiChatbot": "Chatbot IA",
+      "dataIntegration": "Intégration de Données",
+      "processAutomation": "Automatisation des Processus",
+      "dataAnalytics": "Analyse de Données",
+      "enterprise": "Entreprise"
+    }
+  },
+  "experience": {
+    "medicaLigne": {
+      "title": "Développeur Full Stack IA",
+      "company": "Medica ligne",
+      "location": "Marrakech, Maroc",
+      "period": "Août 2025 - En cours",
+      "description": "Travail sur des solutions basées sur l'IA et des projets de développement full-stack."
+    },
+    "tamtam2025": {
+      "title": "Ingénieur Full Stack IA",
+      "company": "TAMTAM International",
+      "location": "Marrakech, Maroc",
+      "period": "Février 2025 - Juillet 2025",
+      "description": "Implémentation d'une plateforme de gestion pour la préparation et la diffusion améliorée de conférences interactives en direct. Création et gestion de scénarios de présentation (scripts, flux de présentation, prompteur). Intégration multimédia (vidéos, images, documents). Interaction en temps réel avec le public (sondages, Q&A, chat). Différenciation entre les utilisateurs. Projet de fin d'études en Développement Web et IA."
+    },
+    "tamtam2024": {
+      "title": "Stagiaire Développeur Full Stack",
+      "company": "TAMTAM International",
+      "location": "Marrakech, Maroc",
+      "period": "Février - Juin 2024",
+      "description": "Développé une plateforme de conférences interactives avec interaction du public en temps réel, intégration multimédia et gestion de scénarios de présentation. Implémenté la méthodologie SCRUM pour une livraison efficace de projet."
+    },
+    "oneClick": {
+      "title": "Stagiaire Développement Web",
+      "company": "OneClick",
+      "location": "Marrakech, Maroc",
+      "period": "Juillet - Août 2024",
+      "description": "Création d'un site web de calendrier familial avec Laravel fullstack : Système de gestion multi-utilisateurs avec attribution de tâches familiales et synchronisation de calendrier en temps réel. Tableau de bord admin : surveillance des événements, traitement des demandes utilisateurs et gestion centralisée du back-office. Projet de fin d'année en Développement Web."
+    },
+    "aliDanTek": {
+      "title": "Stagiaire Développement Web",
+      "company": "AliDanTek",
+      "location": "Marrakech, Maroc",
+      "period": "Juillet - Août 2023",
+      "description": "Centre d'appels médical intelligent : Système de triage des patients et de gestion des rendez-vous basé sur l'IA. Application de centre d'appels IA : Développement d'une solution avec RAG et prompt engineering pour les interfaces médecin/patient et gestion automatisée des rendez-vous. Intégration LLM & Outils IA : Implémentation d'interactions intelligentes entre les modèles de langage et les systèmes médicaux pour le support clinique et le triage des patients."
+    },
+    "greencom": {
+      "title": "Stagiaire Développement Web",
+      "company": "Greencom",
+      "location": "Marrakech, Maroc",
+      "period": "Juillet 2023",
+      "description": "CRM visant à optimiser la gestion des clients, propriétés et rendez-vous, avec automatisation des processus de correspondance et de planification. Création de l'interface utilisateur (UI) pour le back office. Développement full-stack des modules de gestion des rendez-vous, demandes et profils utilisateurs, en collaboration avec l'équipe."
+    }
+  }
+}
+

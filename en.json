@@ -1,0 +1,120 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "hero": {
+    "subtitle": "Full Stack AI Engineer",
+    "description": "Networks and Information Systems Engineering graduate passionate about AI and innovative web development solutions. Ready to tackle ambitious projects with rigor and curiosity.",
+    "cta": "Get In Touch"
+  },
+  "sections": {
+    "technicalSkills": "Technical Skills",
+    "featuredProjects": "Featured Projects",
+    "professionalExperience": "Professional Experience",
+    "downloadResume": "Download My Resume",
+    "resumeDescription": "Get a detailed overview of my experience, skills, and qualifications.",
+    "downloadCV": "Download CV",
+    "getInTouch": "Get In Touch"
+  },
+  "skills": {
+    "programmingLanguages": "Programming Languages",
+    "frameworksLibraries": "Frameworks & Libraries",
+    "devopsTools": "DevOps & Tools",
+    "databases": "Databases",
+    "aiMachineLearning": "AI & Machine Learning",
+    "methodologies": "Methodologies",
+    "supervisedLearning": "Supervised Learning",
+    "unsupervisedLearning": "Unsupervised Learning",
+    "webScraping": "Web Scraping",
+    "sentimentAnalysis": "Sentiment Analysis",
+    "designPatterns": "Design Patterns"
+  },
+  "projects": {
+    "interactiveConference": {
+      "title": "Interactive Conference Platform",
+      "description": "Developed a comprehensive platform for preparing and broadcasting enriched interactive live conferences with real-time audience interaction, media integration, and presentation scenario management."
+    },
+    "cryptoNow": {
+      "title": "CryptoNow - AI Analytics",
+      "description": "Built a Python-based cryptocurrency analysis tool featuring web scraping, sentiment analysis, prediction algorithms, and GPT-powered result explanations for comprehensive market insights."
+    },
+    "familyCalendar": {
+      "title": "Family Calendar Web Application",
+      "description": "Created a full-stack Laravel application for family calendar management with admin dashboard, event consultation, and comprehensive family management features."
+    },
+    "libraryManagement": {
+      "title": "AI-Powered Library Management",
+      "description": "Developed a comprehensive library management system for educational institutions with integrated AI chatbot connected to internal data for enhanced user experience."
+    },
+    "trafficViolation": {
+      "title": "Traffic Violation Management System",
+      "description": "Built a PHP-based CRM system optimizing client, property, and appointment management with automated correspondence and scheduling processes."
+    },
+    "employeeAnalytics": {
+      "title": "Employee Data Analytics Platform",
+      "description": "Implemented a comprehensive data analysis solution for enterprise employee management with advanced analytics and insights generation capabilities."
+    },
+    "tags": {
+      "fullStack": "Full Stack",
+      "realTime": "Real-time",
+      "mediaIntegration": "Media Integration",
+      "aiMl": "AI/ML",
+      "gptIntegration": "GPT Integration",
+      "adminDashboard": "Admin Dashboard",
+      "aiChatbot": "AI Chatbot",
+      "dataIntegration": "Data Integration",
+      "processAutomation": "Process Automation",
+      "dataAnalytics": "Data Analytics",
+      "enterprise": "Enterprise"
+    }
+  },
+  "experience": {
+    "medicaLigne": {
+      "title": "Full Stack AI Developer",
+      "company": "Medica ligne",
+      "location": "Marrakech, Morocco",
+      "period": "August 2025 - Current",
+      "description": "Working on AI-driven solutions and full-stack development projects."
+    },
+    "tamtam2025": {
+      "title": "Full Stack AI Engineer",
+      "company": "TAMTAM International",
+      "location": "Marrakech, Morocco",
+      "period": "February 2025 - July 2025",
+      "description": "Implementation of a management platform for the preparation and enhanced delivery of live interactive conferences. Creation and management of presentation scenarios (scripts, presentation flow, prompter). Media integration (videos, images, documents). Real-time interaction with the audience (polls, Q&A, chat). Differentiated between users. Final year project in Web Development and AI."
+    },
+    "tamtam2024": {
+      "title": "Full Stack Developer Intern",
+      "company": "TAMTAM International",
+      "location": "Marrakech, Morocco",
+      "period": "February - June 2024",
+      "description": "Developed an interactive conference platform with real-time audience interaction, media integration, and presentation scenario management. Implemented SCRUM methodology for efficient project delivery."
+    },
+    "oneClick": {
+      "title": "Web Development Intern",
+      "company": "OneClick",
+      "location": "Marrakech, Morocco",
+      "period": "July - August 2024",
+      "description": "Creation of a family calendar website with Laravel fullstack: Multi-user management system with family task assignment and real-time calendar synchronization. Admin dashboard: event monitoring, user request processing, and centralized back-office management. End of year project in Web Development."
+    },
+    "aliDanTek": {
+      "title": "Web Development Intern",
+      "company": "AliDanTek",
+      "location": "Marrakech, Morocco",
+      "period": "July - August 2023",
+      "description": "Intelligent Medical Call Center: AI-Driven Patient Triage & Appointment Management System. AI Call Center Application: Development of a solution with RAG and prompt engineering for doctor/patient interfaces and automated appointment management. LLM Integration & AI Tools: Implementation of intelligent interactions between language models and medical systems for clinical support and patient triage."
+    },
+    "greencom": {
+      "title": "Web Development Intern",
+      "company": "Greencom",
+      "location": "Marrakech, Morocco",
+      "period": "July 2023",
+      "description": "CRM aimed at optimizing client, property, and appointment management, with automation of correspondence and scheduling processes. Creation of the user interface (UI) for the back office. Full-stack development of appointment, request, and user profile management modules, in collaboration with the team."
+    }
+  }
+}
+

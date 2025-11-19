@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="5402474-200.png">
-    <title>Mohamed Kaabouch - Software Development Engineer</title>
+    <title>Mohamed Kaabouch - Full Stack AI Engineer</title>
     <style>
         * {
             margin: 0;
@@ -295,6 +295,45 @@
             border: 1px solid var(--border);
         }
 
+        .project-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .project-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.6rem 1.2rem;
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .project-btn:hover {
+            background: var(--accent);
+            color: var(--bg-primary);
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .project-btn.github-btn {
+            background: transparent;
+        }
+
+        .project-btn.github-btn:hover {
+            background: var(--accent);
+            color: var(--bg-primary);
+        }
+
         /* Experience Section */
         .experience-timeline {
             position: relative;
@@ -460,11 +499,11 @@
             <div class="logo"> KAABOUCH </div>
             <div class="nav-right">
                 <ul class="nav-links">
-                    <li><a href="#about" data-en="About" data-fr="À propos">About</a></li>
-                    <li><a href="#skills" data-en="Skills" data-fr="Compétences">Skills</a></li>
-                    <li><a href="#projects" data-en="Projects" data-fr="Projets">Projects</a></li>
-                    <li><a href="#experience" data-en="Experience" data-fr="Expérience">Experience</a></li>
-                    <li><a href="#contact" data-en="Contact" data-fr="Contact">Contact</a></li>
+                    <li><a href="#about" data-i18n="nav.about">About</a></li>
+                    <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+                    <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+                    <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
                 </ul>
                 <div class="language-switcher">
                     <button class="lang-btn active" data-lang="en">EN</button>
@@ -478,18 +517,18 @@
     <section class="hero" id="about">
         <div class="hero-content fade-in">
             <h1>Mohamed Kaabouch</h1>
-            <p class="subtitle" data-en="Software Development Engineer" data-fr="Ingénieur Développement Logiciel">Software Development Engineer</p>
-            <p data-en="Networks and Information Systems Engineering graduate passionate about AI and innovative web development solutions. Ready to tackle ambitious projects with rigor and curiosity." data-fr="Diplômé en Ingénierie des Réseaux et Systèmes d'Information, passionné par l'IA et les solutions de développement web innovantes. Prêt à relever des projets ambitieux avec rigueur et curiosité.">Networks and Information Systems Engineering graduate passionate about AI and innovative web development solutions. Ready to tackle ambitious projects with rigor and curiosity.</p>
-            <a href="#contact" class="cta-button" data-en="Get In Touch" data-fr="Me Contacter">Get In Touch</a>
+            <p class="subtitle" data-i18n="hero.subtitle">Full Stack AI Engineer</p>
+            <p data-i18n="hero.description">Networks and Information Systems Engineering graduate passionate about AI and innovative web development solutions. Ready to tackle ambitious projects with rigor and curiosity.</p>
+            <a href="#contact" class="cta-button" data-i18n="hero.cta">Get In Touch</a>
         </div>
     </section>
 
     <!-- Skills Section -->
     <section class="section" id="skills">
-        <h2 class="section-title" data-en="Technical Skills" data-fr="Compétences Techniques">Technical Skills</h2>
+        <h2 class="section-title" data-i18n="sections.technicalSkills">Technical Skills</h2>
         <div class="skills-grid">
             <div class="skill-category fade-in">
-                <h3 data-en="Programming Languages" data-fr="Langages de Programmation">Programming Languages</h3>
+                <h3 data-i18n="skills.programmingLanguages">Programming Languages</h3>
                 <div class="skill-tags">
                     <span class="skill-tag">JavaScript</span>
                     <span class="skill-tag">Python</span>
@@ -499,7 +538,7 @@
                 </div>
             </div>
             <div class="skill-category fade-in">
-                <h3 data-en="Frameworks & Libraries" data-fr="Frameworks & Librairies">Frameworks & Libraries</h3>
+                <h3 data-i18n="skills.frameworksLibraries">Frameworks & Libraries</h3>
                 <div class="skill-tags">
                     <span class="skill-tag">React</span>
                     <span class="skill-tag">Laravel</span>
@@ -509,7 +548,7 @@
                 </div>
             </div>
             <div class="skill-category fade-in">
-                <h3 data-en="DevOps & Tools" data-fr="DevOps & Outils">DevOps & Tools</h3>
+                <h3 data-i18n="skills.devopsTools">DevOps & Tools</h3>
                 <div class="skill-tags">
                     <span class="skill-tag">Docker</span>
                     <span class="skill-tag">Jenkins</span>
@@ -519,7 +558,7 @@
                 </div>
             </div>
             <div class="skill-category fade-in">
-                <h3 data-en="Databases" data-fr="Bases de Données">Databases</h3>
+                <h3 data-i18n="skills.databases">Databases</h3>
                 <div class="skill-tags">
                     <span class="skill-tag">MySQL</span>
                     <span class="skill-tag">MongoDB</span>
@@ -527,21 +566,21 @@
                 </div>
             </div>
             <div class="skill-category fade-in">
-                <h3 data-en="AI & Machine Learning" data-fr="IA & Machine Learning">AI & Machine Learning</h3>
+                <h3 data-i18n="skills.aiMachineLearning">AI & Machine Learning</h3>
                 <div class="skill-tags">
-                    <span class="skill-tag" data-en="Supervised Learning" data-fr="Apprentissage Supervisé">Supervised Learning</span>
-                    <span class="skill-tag" data-en="Unsupervised Learning" data-fr="Apprentissage Non Supervisé">Unsupervised Learning</span>
-                    <span class="skill-tag" data-en="Web Scraping" data-fr="Web Scraping">Web Scraping</span>
-                    <span class="skill-tag" data-en="Sentiment Analysis" data-fr="Analyse de Sentiment">Sentiment Analysis</span>
+                    <span class="skill-tag" data-i18n="skills.supervisedLearning">Supervised Learning</span>
+                    <span class="skill-tag" data-i18n="skills.unsupervisedLearning">Unsupervised Learning</span>
+                    <span class="skill-tag" data-i18n="skills.webScraping">Web Scraping</span>
+                    <span class="skill-tag" data-i18n="skills.sentimentAnalysis">Sentiment Analysis</span>
                 </div>
             </div>
             <div class="skill-category fade-in">
-                <h3 data-en="Methodologies" data-fr="Méthodologies">Methodologies</h3>
+                <h3 data-i18n="skills.methodologies">Methodologies</h3>
                 <div class="skill-tags">
                     <span class="skill-tag">Scrum</span>
                     <span class="skill-tag">Kanban</span>
                     <span class="skill-tag">UML</span>
-                    <span class="skill-tag" data-en="Design Patterns" data-fr="Patrons de Conception">Design Patterns</span>
+                    <span class="skill-tag" data-i18n="skills.designPatterns">Design Patterns</span>
                 </div>
             </div>
         </div>
@@ -549,89 +588,105 @@
 
     <!-- Projects Section -->
     <section class="section" id="projects">
-        <h2 class="section-title" data-en="Featured Projects" data-fr="Projets Phares">Featured Projects</h2>
+        <h2 class="section-title" data-i18n="sections.featuredProjects">Featured Projects</h2>
         <div class="projects-grid">
             <div class="project-card fade-in">
-                <h3 data-en="Interactive Conference Platform" data-fr="Plateforme de Conférences Interactives">Interactive Conference Platform</h3>
-                <p data-en="Developed a comprehensive platform for preparing and broadcasting enriched interactive live conferences with real-time audience interaction, media integration, and presentation scenario management." data-fr="Développé une plateforme complète pour la préparation et la diffusion de conférences interactives en direct avec interaction du public en temps réel, intégration multimédia et gestion de scénarios de présentation.">Developed a comprehensive platform for preparing and broadcasting enriched interactive live conferences with real-time audience interaction, media integration, and presentation scenario management.</p>
+                <h3 data-i18n="projects.interactiveConference.title">Interactive Conference Platform</h3>
+                <p data-i18n="projects.interactiveConference.description">Developed a comprehensive platform for preparing and broadcasting enriched interactive live conferences with real-time audience interaction, media integration, and presentation scenario management.</p>
                 <div class="project-tech">
-                    <span class="tech-tag">Full Stack</span>
-                    <span class="tech-tag" data-en="Real-time" data-fr="Temps Réel">Real-time</span>
-                    <span class="tech-tag" data-en="Media Integration" data-fr="Intégration Multimédia">Media Integration</span>
+                    <span class="tech-tag" data-i18n="projects.tags.fullStack">Full Stack</span>
+                    <span class="tech-tag" data-i18n="projects.tags.realTime">Real-time</span>
+                    <span class="tech-tag" data-i18n="projects.tags.mediaIntegration">Media Integration</span>
                 </div>
             </div>
             <div class="project-card fade-in">
-                <h3 data-en="CryptoNow - AI Analytics" data-fr="CryptoNow - Analyse IA">CryptoNow - AI Analytics</h3>
-                <p data-en="Built a Python-based cryptocurrency analysis tool featuring web scraping, sentiment analysis, prediction algorithms, and GPT-powered result explanations for comprehensive market insights." data-fr="Développé un outil d'analyse de cryptomonnaies en Python avec web scraping, analyse de sentiment, algorithmes de prédiction et explications des résultats alimentées par GPT pour des insights de marché complets.">Built a Python-based cryptocurrency analysis tool featuring web scraping, sentiment analysis, prediction algorithms, and GPT-powered result explanations for comprehensive market insights.</p>
+                <h3 data-i18n="projects.cryptoNow.title">CryptoNow - AI Analytics</h3>
+                <p data-i18n="projects.cryptoNow.description">Built a Python-based cryptocurrency analysis tool featuring web scraping, sentiment analysis, prediction algorithms, and GPT-powered result explanations for comprehensive market insights.</p>
                 <div class="project-tech">
                     <span class="tech-tag">Python</span>
-                    <span class="tech-tag">AI/ML</span>
-                    <span class="tech-tag">Web Scraping</span>
-                    <span class="tech-tag" data-en="GPT Integration" data-fr="Intégration GPT">GPT Integration</span>
+                    <span class="tech-tag" data-i18n="projects.tags.aiMl">AI/ML</span>
+                    <span class="tech-tag" data-i18n="skills.webScraping">Web Scraping</span>
+                    <span class="tech-tag" data-i18n="projects.tags.gptIntegration">GPT Integration</span>
                 </div>
             </div>
             <div class="project-card fade-in">
-                <h3 data-en="Family Calendar Web Application" data-fr="Application Web Calendrier Familial">Family Calendar Web Application</h3>
-                <p data-en="Created a full-stack Laravel application for family calendar management with admin dashboard, event consultation, and comprehensive family management features." data-fr="Créé une application Laravel full-stack pour la gestion de calendrier familial avec tableau de bord admin, consultation d'événements et fonctionnalités complètes de gestion familiale.">Created a full-stack Laravel application for family calendar management with admin dashboard, event consultation, and comprehensive family management features.</p>
+                <h3 data-i18n="projects.familyCalendar.title">Family Calendar Web Application</h3>
+                <p data-i18n="projects.familyCalendar.description">Created a full-stack Laravel application for family calendar management with admin dashboard, event consultation, and comprehensive family management features.</p>
                 <div class="project-tech">
                     <span class="tech-tag">Laravel</span>
-                    <span class="tech-tag">Full Stack</span>
-                    <span class="tech-tag" data-en="Admin Dashboard" data-fr="Tableau de Bord Admin">Admin Dashboard</span>
+                    <span class="tech-tag" data-i18n="projects.tags.fullStack">Full Stack</span>
+                    <span class="tech-tag" data-i18n="projects.tags.adminDashboard">Admin Dashboard</span>
                 </div>
             </div>
             <div class="project-card fade-in">
-                <h3 data-en="AI-Powered Library Management" data-fr="Gestion de Bibliothèque avec IA">AI-Powered Library Management</h3>
-                <p data-en="Developed a comprehensive library management system for educational institutions with integrated AI chatbot connected to internal data for enhanced user experience." data-fr="Développé un système complet de gestion de bibliothèque pour les établissements d'enseignement avec chatbot IA intégré connecté aux données internes pour une expérience utilisateur améliorée.">Developed a comprehensive library management system for educational institutions with integrated AI chatbot connected to internal data for enhanced user experience.</p>
+                <h3 data-i18n="projects.libraryManagement.title">AI-Powered Library Management</h3>
+                <p data-i18n="projects.libraryManagement.description">Developed a comprehensive library management system for educational institutions with integrated AI chatbot connected to internal data for enhanced user experience.</p>
                 <div class="project-tech">
-                    <span class="tech-tag">Full Stack</span>
-                    <span class="tech-tag" data-en="AI Chatbot" data-fr="Chatbot IA">AI Chatbot</span>
-                    <span class="tech-tag" data-en="Data Integration" data-fr="Intégration de Données">Data Integration</span>
+                    <span class="tech-tag" data-i18n="projects.tags.fullStack">Full Stack</span>
+                    <span class="tech-tag" data-i18n="projects.tags.aiChatbot">AI Chatbot</span>
+                    <span class="tech-tag" data-i18n="projects.tags.dataIntegration">Data Integration</span>
                 </div>
             </div>
             <div class="project-card fade-in">
-                <h3 data-en="Traffic Violation Management System" data-fr="Système de Gestion des Infractions">Traffic Violation Management System</h3>
-                <p data-en="Built a PHP-based CRM system optimizing client, property, and appointment management with automated correspondence and scheduling processes." data-fr="Développé un système CRM basé sur PHP optimisant la gestion des clients, propriétés et rendez-vous avec des processus automatisés de correspondance et de planification.">Built a PHP-based CRM system optimizing client, property, and appointment management with automated correspondence and scheduling processes.</p>
+                <h3 data-i18n="projects.trafficViolation.title">Traffic Violation Management System</h3>
+                <p data-i18n="projects.trafficViolation.description">Built a PHP-based CRM system optimizing client, property, and appointment management with automated correspondence and scheduling processes.</p>
                 <div class="project-tech">
                     <span class="tech-tag">PHP</span>
                     <span class="tech-tag">CRM</span>
-                    <span class="tech-tag" data-en="Process Automation" data-fr="Automatisation des Processus">Process Automation</span>
+                    <span class="tech-tag" data-i18n="projects.tags.processAutomation">Process Automation</span>
                 </div>
             </div>
             <div class="project-card fade-in">
-                <h3 data-en="Employee Data Analytics Platform" data-fr="Plateforme d'Analyse de Données Employés">Employee Data Analytics Platform</h3>
-                <p data-en="Implemented a comprehensive data analysis solution for enterprise employee management with advanced analytics and insights generation capabilities." data-fr="Implémenté une solution complète d'analyse de données pour la gestion d'employés d'entreprise avec des capacités d'analyse avancées et de génération d'insights.">Implemented a comprehensive data analysis solution for enterprise employee management with advanced analytics and insights generation capabilities.</p>
+                <h3 data-i18n="projects.employeeAnalytics.title">Employee Data Analytics Platform</h3>
+                <p data-i18n="projects.employeeAnalytics.description">Implemented a comprehensive data analysis solution for enterprise employee management with advanced analytics and insights generation capabilities.</p>
                 <div class="project-tech">
-                    <span class="tech-tag" data-en="Data Analytics" data-fr="Analyse de Données">Data Analytics</span>
-                    <span class="tech-tag" data-en="Enterprise" data-fr="Entreprise">Enterprise</span>
+                    <span class="tech-tag" data-i18n="projects.tags.dataAnalytics">Data Analytics</span>
+                    <span class="tech-tag" data-i18n="projects.tags.enterprise">Enterprise</span>
                     <span class="tech-tag">Insights</span>
                 </div>
+                
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/kaabouc" target="_blank" class="project-btn github-btn">
+                    <span>🔗</span> <span data-i18n="projects.viewOnGitHub">View on GitHub</span>
+                </a>    
             </div>
         </div>
     </section>
 
     <!-- Experience Section -->
     <section class="section" id="experience">
-        <h2 class="section-title" data-en="Professional Experience" data-fr="Expérience Professionnelle">Professional Experience</h2>
+        <h2 class="section-title" data-i18n="sections.professionalExperience">Professional Experience</h2>
         <div class="experience-timeline">
             <div class="timeline-item fade-in">
-                <h3 data-en="Full Stack Developer Intern" data-fr="Stagiaire Développeur Full Stack">Full Stack Developer Intern</h3>
-                <p class="company">TAMTAM International | Marrakech | <span data-en="February - June 2024" data-fr="Février - Juin 2024">February - June 2024</span></p>
-                <p data-en="Developed an interactive conference platform with real-time audience interaction, media integration, and presentation scenario management. Implemented SCRUM methodology for efficient project delivery." data-fr="Développé une plateforme de conférences interactives avec interaction du public en temps réel, intégration multimédia et gestion de scénarios de présentation. Implémenté la méthodologie SCRUM pour une livraison efficace de projet.">Developed an interactive conference platform with real-time audience interaction, media integration, and presentation scenario management. Implemented SCRUM methodology for efficient project delivery.</p>
+                <h3 data-i18n="experience.medicaLigne.title">Full Stack AI Developer</h3>
+                <p class="company"><span data-i18n="experience.medicaLigne.company">Medica ligne</span> | <span data-i18n="experience.medicaLigne.location">Marrakech, Morocco</span> | <span data-i18n="experience.medicaLigne.period">August 2025 - Current</span></p>
+                <p data-i18n="experience.medicaLigne.description">Working on AI-driven solutions and full-stack development projects.</p>
             </div>
             <div class="timeline-item fade-in">
-                <h3 data-en="Web Development Intern" data-fr="Stagiaire Développement Web">Web Development Intern</h3>
-                <p class="company">OneClick | Marrakech | <span data-en="July - August 2024" data-fr="Juillet - Août 2024">July - August 2024</span></p>
-                <p data-en="Created a comprehensive family calendar web application using Laravel full-stack development, including admin dashboard and event management features." data-fr="Créé une application web complète de calendrier familial utilisant le développement full-stack Laravel, incluant un tableau de bord admin et des fonctionnalités de gestion d'événements.">Created a comprehensive family calendar web application using Laravel full-stack development, including admin dashboard and event management features.</p>
+                <h3 data-i18n="experience.tamtam2025.title">Full Stack AI Engineer</h3>
+                <p class="company"><span data-i18n="experience.tamtam2025.company">TAMTAM International</span> | <span data-i18n="experience.tamtam2025.location">Marrakech, Morocco</span> | <span data-i18n="experience.tamtam2025.period">February 2025 - July 2025</span></p>
+                <p data-i18n="experience.tamtam2025.description">Implementation of a management platform for the preparation and enhanced delivery of live interactive conferences. Creation and management of presentation scenarios (scripts, presentation flow, prompter). Media integration (videos, images, documents). Real-time interaction with the audience (polls, Q&A, chat). Differentiated between users. Final year project in Web Development and AI.</p>
             </div>
             <div class="timeline-item fade-in">
-                <h3 data-en="Web Development Intern" data-fr="Stagiaire Développement Web">Web Development Intern</h3>
-                <p class="company">AliDanTek | Marrakech | <span data-en="August 2023" data-fr="Août 2023">August 2023</span></p>
-                <p data-en="Contributed to web development projects, gaining hands-on experience with modern development practices and team collaboration." data-fr="Contribué à des projets de développement web, acquérant une expérience pratique avec les pratiques de développement modernes et la collaboration d'équipe.">Contributed to web development projects, gaining hands-on experience with modern development practices and team collaboration.</p>
+                <h3 data-i18n="experience.tamtam2024.title">Full Stack Developer Intern</h3>
+                <p class="company"><span data-i18n="experience.tamtam2024.company">TAMTAM International</span> | <span data-i18n="experience.tamtam2024.location">Marrakech, Morocco</span> | <span data-i18n="experience.tamtam2024.period">February - June 2024</span></p>
+                <p data-i18n="experience.tamtam2024.description">Developed an interactive conference platform with real-time audience interaction, media integration, and presentation scenario management. Implemented SCRUM methodology for efficient project delivery.</p>
             </div>
             <div class="timeline-item fade-in">
-                <h3 data-en="Web Development Intern" data-fr="Stagiaire Développement Web">Web Development Intern</h3>
-                <p class="company">Greencom | Marrakech | <span data-en="July 2023" data-fr="Juillet 2023">July 2023</span></p>
-                <p data-en="Developed a traffic violation management system in PHP, including UI development for backoffice and full-stack development of appointment, request, and user profile management modules." data-fr="Développé un système de gestion des infractions routières en PHP, incluant le développement UI pour le backoffice et le développement full-stack des modules de gestion des rendez-vous, demandes et profils utilisateurs.">Developed a traffic violation management system in PHP, including UI development for backoffice and full-stack development of appointment, request, and user profile management modules.</p>
+                <h3 data-i18n="experience.oneClick.title">Web Development Intern</h3>
+                <p class="company"><span data-i18n="experience.oneClick.company">OneClick</span> | <span data-i18n="experience.oneClick.location">Marrakech, Morocco</span> | <span data-i18n="experience.oneClick.period">July - August 2024</span></p>
+                <p data-i18n="experience.oneClick.description">Creation of a family calendar website with Laravel fullstack: Multi-user management system with family task assignment and real-time calendar synchronization. Admin dashboard: event monitoring, user request processing, and centralized back-office management. End of year project in Web Development.</p>
+            </div>
+            <div class="timeline-item fade-in">
+                <h3 data-i18n="experience.aliDanTek.title">Web Development Intern</h3>
+                <p class="company"><span data-i18n="experience.aliDanTek.company">AliDanTek</span> | <span data-i18n="experience.aliDanTek.location">Marrakech, Morocco</span> | <span data-i18n="experience.aliDanTek.period">July - August 2023</span></p>
+                <p data-i18n="experience.aliDanTek.description">Intelligent Medical Call Center: AI-Driven Patient Triage & Appointment Management System. AI Call Center Application: Development of a solution with RAG and prompt engineering for doctor/patient interfaces and automated appointment management. LLM Integration & AI Tools: Implementation of intelligent interactions between language models and medical systems for clinical support and patient triage.</p>
+            </div>
+            <div class="timeline-item fade-in">
+                <h3 data-i18n="experience.greencom.title">Web Development Intern</h3>
+                <p class="company"><span data-i18n="experience.greencom.company">Greencom</span> | <span data-i18n="experience.greencom.location">Marrakech, Morocco</span> | <span data-i18n="experience.greencom.period">July 2023</span></p>
+                <p data-i18n="experience.greencom.description">CRM aimed at optimizing client, property, and appointment management, with automation of correspondence and scheduling processes. Creation of the user interface (UI) for the back office. Full-stack development of appointment, request, and user profile management modules, in collaboration with the team.</p>
             </div>
         </div>
     </section>
@@ -639,17 +694,17 @@
     <!-- Resume Download Section -->
     <section class="section">
         <div class="resume-section fade-in">
-            <h2 data-en="Download My Resume" data-fr="Télécharger Mon CV">Download My Resume</h2>
-            <p data-en="Get a detailed overview of my experience, skills, and qualifications." data-fr="Obtenez un aperçu détaillé de mon expérience, mes compétences et mes qualifications.">Get a detailed overview of my experience, skills, and qualifications.</p>
+            <h2 data-i18n="sections.downloadResume">Download My Resume</h2>
+            <p data-i18n="sections.resumeDescription">Get a detailed overview of my experience, skills, and qualifications.</p>
             <a href="kaabouch mohamed.pdf" class="download-btn">
-                📄 <span data-en="Download CV" data-fr="Télécharger CV">Download CV</span>
+                📄 <span data-i18n="sections.downloadCV">Download CV</span>
             </a>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section class="section" id="contact">
-        <h2 class="section-title">Get In Touch</h2>
+        <h2 class="section-title" data-i18n="sections.getInTouch">Get In Touch</h2>
         <div class="contact-info">
             <div class="contact-item fade-in">
                 <h3>📧 Email</h3>
@@ -675,47 +730,337 @@
     </section>
 
     <script>
-        // Language switcher functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            const langButtons = document.querySelectorAll('.lang-btn');
-            const elementsWithTranslations = document.querySelectorAll('[data-en][data-fr]');
-            
-            // Set default language
+        // Translation system with embedded translations
+        let translations = {
+            en: {
+                nav: {
+                    about: "About",
+                    skills: "Skills",
+                    projects: "Projects",
+                    experience: "Experience",
+                    contact: "Contact"
+                },
+                hero: {
+                    subtitle: "Full Stack AI Engineer",
+                    description: "Networks and Information Systems Engineering graduate passionate about AI and innovative web development solutions. Ready to tackle ambitious projects with rigor and curiosity.",
+                    cta: "Get In Touch"
+                },
+                sections: {
+                    technicalSkills: "Technical Skills",
+                    featuredProjects: "Featured Projects",
+                    professionalExperience: "Professional Experience",
+                    downloadResume: "Download My Resume",
+                    resumeDescription: "Get a detailed overview of my experience, skills, and qualifications.",
+                    downloadCV: "Download CV",
+                    getInTouch: "Get In Touch"
+                },
+                skills: {
+                    programmingLanguages: "Programming Languages",
+                    frameworksLibraries: "Frameworks & Libraries",
+                    devopsTools: "DevOps & Tools",
+                    databases: "Databases",
+                    aiMachineLearning: "AI & Machine Learning",
+                    methodologies: "Methodologies",
+                    supervisedLearning: "Supervised Learning",
+                    unsupervisedLearning: "Unsupervised Learning",
+                    webScraping: "Web Scraping",
+                    sentimentAnalysis: "Sentiment Analysis",
+                    designPatterns: "Design Patterns"
+                },
+                projects: {
+                    interactiveConference: {
+                        title: "Interactive Conference Platform",
+                        description: "Developed a comprehensive platform for preparing and broadcasting enriched interactive live conferences with real-time audience interaction, media integration, and presentation scenario management."
+                    },
+                    cryptoNow: {
+                        title: "CryptoNow - AI Analytics",
+                        description: "Built a Python-based cryptocurrency analysis tool featuring web scraping, sentiment analysis, prediction algorithms, and GPT-powered result explanations for comprehensive market insights."
+                    },
+                    familyCalendar: {
+                        title: "Family Calendar Web Application",
+                        description: "Created a full-stack Laravel application for family calendar management with admin dashboard, event consultation, and comprehensive family management features."
+                    },
+                    libraryManagement: {
+                        title: "AI-Powered Library Management",
+                        description: "Developed a comprehensive library management system for educational institutions with integrated AI chatbot connected to internal data for enhanced user experience."
+                    },
+                    trafficViolation: {
+                        title: "Traffic Violation Management System",
+                        description: "Built a PHP-based CRM system optimizing client, property, and appointment management with automated correspondence and scheduling processes."
+                    },
+                    employeeAnalytics: {
+                        title: "Employee Data Analytics Platform",
+                        description: "Implemented a comprehensive data analysis solution for enterprise employee management with advanced analytics and insights generation capabilities."
+                    },
+                    tags: {
+                        fullStack: "Full Stack",
+                        realTime: "Real-time",
+                        mediaIntegration: "Media Integration",
+                        aiMl: "AI/ML",
+                        gptIntegration: "GPT Integration",
+                        adminDashboard: "Admin Dashboard",
+                        aiChatbot: "AI Chatbot",
+                        dataIntegration: "Data Integration",
+                        processAutomation: "Process Automation",
+                        dataAnalytics: "Data Analytics",
+                        enterprise: "Enterprise"
+                    },
+                    viewOnGitHub: "View on GitHub"
+                },
+                experience: {
+                    medicaLigne: {
+                        title: "Full Stack AI Developer",
+                        company: "Medica ligne",
+                        location: "Marrakech, Morocco",
+                        period: "August 2025 - Current",
+                        description: "Working on AI-driven solutions and full-stack development projects."
+                    },
+                    tamtam2025: {
+                        title: "Full Stack AI Engineer",
+                        company: "TAMTAM International",
+                        location: "Marrakech, Morocco",
+                        period: "February 2025 - July 2025",
+                        description: "Implementation of a management platform for the preparation and enhanced delivery of live interactive conferences. Creation and management of presentation scenarios (scripts, presentation flow, prompter). Media integration (videos, images, documents). Real-time interaction with the audience (polls, Q&A, chat). Differentiated between users. Final year project in Web Development and AI."
+                    },
+                    tamtam2024: {
+                        title: "Full Stack Developer Intern",
+                        company: "TAMTAM International",
+                        location: "Marrakech, Morocco",
+                        period: "February - June 2024",
+                        description: "Developed an interactive conference platform with real-time audience interaction, media integration, and presentation scenario management. Implemented SCRUM methodology for efficient project delivery."
+                    },
+                    oneClick: {
+                        title: "Web Development Intern",
+                        company: "OneClick",
+                        location: "Marrakech, Morocco",
+                        period: "July - August 2024",
+                        description: "Creation of a family calendar website with Laravel fullstack: Multi-user management system with family task assignment and real-time calendar synchronization. Admin dashboard: event monitoring, user request processing, and centralized back-office management. End of year project in Web Development."
+                    },
+                    aliDanTek: {
+                        title: "Web Development Intern",
+                        company: "AliDanTek",
+                        location: "Marrakech, Morocco",
+                        period: "July - August 2023",
+                        description: "Intelligent Medical Call Center: AI-Driven Patient Triage & Appointment Management System. AI Call Center Application: Development of a solution with RAG and prompt engineering for doctor/patient interfaces and automated appointment management. LLM Integration & AI Tools: Implementation of intelligent interactions between language models and medical systems for clinical support and patient triage."
+                    },
+                    greencom: {
+                        title: "Web Development Intern",
+                        company: "Greencom",
+                        location: "Marrakech, Morocco",
+                        period: "July 2023",
+                        description: "CRM aimed at optimizing client, property, and appointment management, with automation of correspondence and scheduling processes. Creation of the user interface (UI) for the back office. Full-stack development of appointment, request, and user profile management modules, in collaboration with the team."
+                    }
+                }
+            },
+            fr: {
+                nav: {
+                    about: "À propos",
+                    skills: "Compétences",
+                    projects: "Projets",
+                    experience: "Expérience",
+                    contact: "Contact"
+                },
+                hero: {
+                    subtitle: "Ingénieur Full Stack IA",
+                    description: "Diplômé en Ingénierie des Réseaux et Systèmes d'Information, passionné par l'IA et les solutions de développement web innovantes. Prêt à relever des projets ambitieux avec rigueur et curiosité.",
+                    cta: "Me Contacter"
+                },
+                sections: {
+                    technicalSkills: "Compétences Techniques",
+                    featuredProjects: "Projets Phares",
+                    professionalExperience: "Expérience Professionnelle",
+                    downloadResume: "Télécharger Mon CV",
+                    resumeDescription: "Obtenez un aperçu détaillé de mon expérience, mes compétences et mes qualifications.",
+                    downloadCV: "Télécharger CV",
+                    getInTouch: "Me Contacter"
+                },
+                skills: {
+                    programmingLanguages: "Langages de Programmation",
+                    frameworksLibraries: "Frameworks & Librairies",
+                    devopsTools: "DevOps & Outils",
+                    databases: "Bases de Données",
+                    aiMachineLearning: "IA & Machine Learning",
+                    methodologies: "Méthodologies",
+                    supervisedLearning: "Apprentissage Supervisé",
+                    unsupervisedLearning: "Apprentissage Non Supervisé",
+                    webScraping: "Web Scraping",
+                    sentimentAnalysis: "Analyse de Sentiment",
+                    designPatterns: "Patrons de Conception"
+                },
+                projects: {
+                    interactiveConference: {
+                        title: "Plateforme de Conférences Interactives",
+                        description: "Développé une plateforme complète pour la préparation et la diffusion de conférences interactives en direct avec interaction du public en temps réel, intégration multimédia et gestion de scénarios de présentation."
+                    },
+                    cryptoNow: {
+                        title: "CryptoNow - Analyse IA",
+                        description: "Développé un outil d'analyse de cryptomonnaies en Python avec web scraping, analyse de sentiment, algorithmes de prédiction et explications des résultats alimentées par GPT pour des insights de marché complets."
+                    },
+                    familyCalendar: {
+                        title: "Application Web Calendrier Familial",
+                        description: "Créé une application Laravel full-stack pour la gestion de calendrier familial avec tableau de bord admin, consultation d'événements et fonctionnalités complètes de gestion familiale."
+                    },
+                    libraryManagement: {
+                        title: "Gestion de Bibliothèque avec IA",
+                        description: "Développé un système complet de gestion de bibliothèque pour les établissements d'enseignement avec chatbot IA intégré connecté aux données internes pour une expérience utilisateur améliorée."
+                    },
+                    trafficViolation: {
+                        title: "Système de Gestion des Infractions",
+                        description: "Développé un système CRM basé sur PHP optimisant la gestion des clients, propriétés et rendez-vous avec des processus automatisés de correspondance et de planification."
+                    },
+                    employeeAnalytics: {
+                        title: "Plateforme d'Analyse de Données Employés",
+                        description: "Implémenté une solution complète d'analyse de données pour la gestion d'employés d'entreprise avec des capacités d'analyse avancées et de génération d'insights."
+                    },
+                    tags: {
+                        fullStack: "Full Stack",
+                        realTime: "Temps Réel",
+                        mediaIntegration: "Intégration Multimédia",
+                        aiMl: "IA/ML",
+                        gptIntegration: "Intégration GPT",
+                        adminDashboard: "Tableau de Bord Admin",
+                        aiChatbot: "Chatbot IA",
+                        dataIntegration: "Intégration de Données",
+                        processAutomation: "Automatisation des Processus",
+                        dataAnalytics: "Analyse de Données",
+                        enterprise: "Entreprise"
+                    },
+                    viewOnGitHub: "Voir sur GitHub"
+                },
+                experience: {
+                    medicaLigne: {
+                        title: "Développeur Full Stack IA",
+                        company: "Medica ligne",
+                        location: "Marrakech, Maroc",
+                        period: "Août 2025 - En cours",
+                        description: "Travail sur des solutions basées sur l'IA et des projets de développement full-stack."
+                    },
+                    tamtam2025: {
+                        title: "Ingénieur Full Stack IA",
+                        company: "TAMTAM International",
+                        location: "Marrakech, Maroc",
+                        period: "Février 2025 - Juillet 2025",
+                        description: "Implémentation d'une plateforme de gestion pour la préparation et la diffusion améliorée de conférences interactives en direct. Création et gestion de scénarios de présentation (scripts, flux de présentation, prompteur). Intégration multimédia (vidéos, images, documents). Interaction en temps réel avec le public (sondages, Q&A, chat). Différenciation entre les utilisateurs. Projet de fin d'études en Développement Web et IA."
+                    },
+                    tamtam2024: {
+                        title: "Stagiaire Développeur Full Stack",
+                        company: "TAMTAM International",
+                        location: "Marrakech, Maroc",
+                        period: "Février - Juin 2024",
+                        description: "Développé une plateforme de conférences interactives avec interaction du public en temps réel, intégration multimédia et gestion de scénarios de présentation. Implémenté la méthodologie SCRUM pour une livraison efficace de projet."
+                    },
+                    oneClick: {
+                        title: "Stagiaire Développement Web",
+                        company: "OneClick",
+                        location: "Marrakech, Maroc",
+                        period: "Juillet - Août 2024",
+                        description: "Création d'un site web de calendrier familial avec Laravel fullstack : Système de gestion multi-utilisateurs avec attribution de tâches familiales et synchronisation de calendrier en temps réel. Tableau de bord admin : surveillance des événements, traitement des demandes utilisateurs et gestion centralisée du back-office. Projet de fin d'année en Développement Web."
+                    },
+                    aliDanTek: {
+                        title: "Stagiaire Développement Web",
+                        company: "AliDanTek",
+                        location: "Marrakech, Maroc",
+                        period: "Juillet - Août 2023",
+                        description: "Centre d'appels médical intelligent : Système de triage des patients et de gestion des rendez-vous basé sur l'IA. Application de centre d'appels IA : Développement d'une solution avec RAG et prompt engineering pour les interfaces médecin/patient et gestion automatisée des rendez-vous. Intégration LLM & Outils IA : Implémentation d'interactions intelligentes entre les modèles de langage et les systèmes médicaux pour le support clinique et le triage des patients."
+                    },
+                    greencom: {
+                        title: "Stagiaire Développement Web",
+                        company: "Greencom",
+                        location: "Marrakech, Maroc",
+                        period: "Juillet 2023",
+                        description: "CRM visant à optimiser la gestion des clients, propriétés et rendez-vous, avec automatisation des processus de correspondance et de planification. Création de l'interface utilisateur (UI) pour le back office. Développement full-stack des modules de gestion des rendez-vous, demandes et profils utilisateurs, en collaboration avec l'équipe."
+                    }
+                }
+            }
+        };
+        
             let currentLanguage = 'en';
             
-            // Function to update text content based on selected language
-            function updateLanguage(language) {
-                elementsWithTranslations.forEach(element => {
-                    const translatedText = element.getAttribute(`data-${language}`);
-                    if (translatedText) {
-                        // Handle different types of elements
+        // Get nested translation value using dot notation (e.g., "nav.about")
+        function getTranslation(key, lang) {
+            if (!translations[lang]) {
+                console.warn(`Translations for ${lang} not loaded yet`);
+                return null;
+            }
+            
+            const keys = key.split('.');
+            let value = translations[lang];
+            
+            for (const k of keys) {
+                if (value && typeof value === 'object' && k in value) {
+                    value = value[k];
+                } else {
+                    console.warn(`Translation key "${key}" not found in ${lang}.json`);
+                    return null;
+                }
+            }
+            
+            return value;
+        }
+        
+        // Update all elements with data-i18n attributes
+        function updateTranslations(lang) {
+            if (!translations[lang]) {
+                console.error(`Cannot update translations: ${lang} not loaded`);
+                return;
+            }
+            
+            const elements = document.querySelectorAll('[data-i18n]');
+            
+            elements.forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (!key) return;
+                
+                const translation = getTranslation(key, lang);
+                
+                if (translation !== null && translation !== undefined) {
                         if (element.tagName === 'INPUT' && element.type === 'submit') {
-                            element.value = translatedText;
+                        element.value = translation;
                         } else if (element.hasAttribute('placeholder')) {
-                            element.placeholder = translatedText;
+                        element.placeholder = translation;
                         } else {
-                            element.textContent = translatedText;
+                        element.textContent = translation;
                         }
                     }
                 });
                 
-                // Update current language
-                currentLanguage = language;
+            currentLanguage = lang;
                 
                 // Update active button state
+            const langButtons = document.querySelectorAll('.lang-btn');
                 langButtons.forEach(btn => {
                     btn.classList.remove('active');
-                    if (btn.dataset.lang === language) {
+                if (btn.dataset.lang === lang) {
                         btn.classList.add('active');
                     }
                 });
             }
+        
+        // Language switcher functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set default language to English
+            updateTranslations('en');
             
             // Add click event listeners to language buttons
+            const langButtons = document.querySelectorAll('.lang-btn');
             langButtons.forEach(button => {
-                button.addEventListener('click', function() {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    
                     const selectedLanguage = this.dataset.lang;
-                    updateLanguage(selectedLanguage);
+                    
+                    if (!selectedLanguage) {
+                        console.error('No language specified in button');
+                        return;
+                    }
+                    
+                    if (!translations[selectedLanguage]) {
+                        console.error(`Translations for ${selectedLanguage} not available`);
+                        return;
+                    }
+                    
+                    updateTranslations(selectedLanguage);
                 });
             });
         });
