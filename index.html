@@ -391,6 +391,44 @@
             margin-bottom: 1rem;
         }
 
+        /* Interests Section */
+        .interests-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .interest-item {
+            background: var(--bg-card);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .interest-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.1);
+        }
+
+        .interest-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .interest-item h3 {
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .interest-item p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
         .contact-item a {
             color: var(--text-secondary);
             text-decoration: none;
@@ -583,6 +621,46 @@
                     <span class="skill-tag" data-i18n="skills.designPatterns">Design Patterns</span>
                 </div>
             </div>
+            <div class="skill-category fade-in">
+                <h3 data-i18n="skills.softSkills">Soft Skills</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag" data-i18n="skills.teamwork">Teamwork</span>
+                    <span class="skill-tag" data-i18n="skills.communication">Communication</span>
+                    <span class="skill-tag" data-i18n="skills.problemSolving">Problem Solving</span>
+                    <span class="skill-tag" data-i18n="skills.adaptability">Adaptability</span>
+                    <span class="skill-tag" data-i18n="skills.leadership">Leadership</span>
+                    <span class="skill-tag" data-i18n="skills.timeManagement">Time Management</span>
+                    <span class="skill-tag" data-i18n="skills.criticalThinking">Critical Thinking</span>
+                    <span class="skill-tag" data-i18n="skills.collaboration">Collaboration</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section class="section" id="interests">
+        <h2 class="section-title" data-i18n="sections.interests">Areas of Interest</h2>
+        <div class="interests-grid">
+            <div class="interest-item fade-in">
+                <div class="interest-icon">⚽</div>
+                <h3 data-i18n="interests.sports">Sports</h3>
+                <p data-i18n="interests.sportsDesc">Football</p>
+            </div>
+            <div class="interest-item fade-in">
+                <div class="interest-icon">🎮</div>
+                <h3 data-i18n="interests.teamGames">Team Games</h3>
+                <p data-i18n="interests.teamGamesDesc">Collaborative gaming and team activities</p>
+            </div>
+            <div class="interest-item fade-in">
+                <div class="interest-icon">🌍</div>
+                <h3 data-i18n="interests.travel">Travel</h3>
+                <p data-i18n="interests.travelDesc">Exploring new places and cultures</p>
+            </div>
+            <div class="interest-item fade-in">
+                <div class="interest-icon">🤝</div>
+                <h3 data-i18n="interests.socialActivities">Social Activities</h3>
+                <p data-i18n="interests.socialActivitiesDesc">Community engagement and networking</p>
+            </div>
         </div>
     </section>
 
@@ -752,7 +830,8 @@
                     downloadResume: "Download My Resume",
                     resumeDescription: "Get a detailed overview of my experience, skills, and qualifications.",
                     downloadCV: "Download CV",
-                    getInTouch: "Get In Touch"
+                    getInTouch: "Get In Touch",
+                    interests: "Areas of Interest"
                 },
                 skills: {
                     programmingLanguages: "Programming Languages",
@@ -765,7 +844,16 @@
                     unsupervisedLearning: "Unsupervised Learning",
                     webScraping: "Web Scraping",
                     sentimentAnalysis: "Sentiment Analysis",
-                    designPatterns: "Design Patterns"
+                    designPatterns: "Design Patterns",
+                    softSkills: "Soft Skills",
+                    teamwork: "Teamwork",
+                    communication: "Communication",
+                    problemSolving: "Problem Solving",
+                    adaptability: "Adaptability",
+                    leadership: "Leadership",
+                    timeManagement: "Time Management",
+                    criticalThinking: "Critical Thinking",
+                    collaboration: "Collaboration"
                 },
                 projects: {
                     interactiveConference: {
@@ -850,6 +938,16 @@
                         period: "July 2023",
                         description: "CRM aimed at optimizing client, property, and appointment management, with automation of correspondence and scheduling processes. Creation of the user interface (UI) for the back office. Full-stack development of appointment, request, and user profile management modules, in collaboration with the team."
                     }
+                },
+                interests: {
+                    sports: "Sports",
+                    sportsDesc: "Football",
+                    teamGames: "Team Games",
+                    teamGamesDesc: "Collaborative gaming and team activities",
+                    travel: "Travel",
+                    travelDesc: "Exploring new places and cultures",
+                    socialActivities: "Social Activities",
+                    socialActivitiesDesc: "Community engagement and networking"
                 }
             },
             fr: {
@@ -872,7 +970,8 @@
                     downloadResume: "Télécharger Mon CV",
                     resumeDescription: "Obtenez un aperçu détaillé de mon expérience, mes compétences et mes qualifications.",
                     downloadCV: "Télécharger CV",
-                    getInTouch: "Me Contacter"
+                    getInTouch: "Me Contacter",
+                    interests: "Centres d'Intérêt"
                 },
                 skills: {
                     programmingLanguages: "Langages de Programmation",
@@ -885,7 +984,16 @@
                     unsupervisedLearning: "Apprentissage Non Supervisé",
                     webScraping: "Web Scraping",
                     sentimentAnalysis: "Analyse de Sentiment",
-                    designPatterns: "Patrons de Conception"
+                    designPatterns: "Patrons de Conception",
+                    softSkills: "Compétences Comportementales",
+                    teamwork: "Travail d'Équipe",
+                    communication: "Communication",
+                    problemSolving: "Résolution de Problèmes",
+                    adaptability: "Adaptabilité",
+                    leadership: "Leadership",
+                    timeManagement: "Gestion du Temps",
+                    criticalThinking: "Esprit Critique",
+                    collaboration: "Collaboration"
                 },
                 projects: {
                     interactiveConference: {
@@ -970,12 +1078,22 @@
                         period: "Juillet 2023",
                         description: "CRM visant à optimiser la gestion des clients, propriétés et rendez-vous, avec automatisation des processus de correspondance et de planification. Création de l'interface utilisateur (UI) pour le back office. Développement full-stack des modules de gestion des rendez-vous, demandes et profils utilisateurs, en collaboration avec l'équipe."
                     }
+                },
+                interests: {
+                    sports: "Sports",
+                    sportsDesc: "Football",
+                    teamGames: "Jeux d'Équipe",
+                    teamGamesDesc: "Jeux collaboratifs et activités d'équipe",
+                    travel: "Voyage",
+                    travelDesc: "Découverte de nouveaux lieux et cultures",
+                    socialActivities: "Activités Sociales",
+                    socialActivitiesDesc: "Engagement communautaire et réseautage"
                 }
             }
         };
         
-            let currentLanguage = 'en';
-            
+        let currentLanguage = 'en';
+        
         // Get nested translation value using dot notation (e.g., "nav.about")
         function getTranslation(key, lang) {
             if (!translations[lang]) {
@@ -1094,7 +1212,7 @@
         }, observerOptions);
     
         // Observe all elements that should fade in
-        document.querySelectorAll('.skill-category, .project-card, .timeline-item, .contact-item, .resume-section').forEach(el => {
+        document.querySelectorAll('.skill-category, .project-card, .timeline-item, .contact-item, .resume-section, .interest-item').forEach(el => {
             observer.observe(el);
         });
     
